@@ -156,18 +156,15 @@ body {
       font-size: 20px;
       font-weight: 400;
       padding-left: 30px; }
-    .header .nav .sprite {
-      background-image: url(../img/spritesheet.png);
-      background-repeat: no-repeat;
-      display: block; }
     .header .nav .sprite-star {
       width: 23px;
       height: 22px;
-      background-position: -5px -141px; }
+      background: url("../img/Layer 2.svg") no-repeat;
+      margin-left: 20px; }
     .header .nav .sprite-user {
       width: 24px;
       height: 22px;
-      background-position: -38px -141px;
+      background: url("../img/Layer -1.svg") no-repeat;
       margin-left: 20px; }
   .header .nav-show .menu-icon span {
     -webkit-transform: rotate(45deg);
@@ -947,6 +944,8 @@ body {
         width: 20px;
         height: 20px;
         background: url(../img/star.png); }
+      .main-content .people-list .people-item .active-star {
+        background: url(../img/star.svg); }
       .main-content .people-list .people-item .name {
         font-size: 14px;
         font-weight: 400; }
@@ -1050,52 +1049,35 @@ body {
     width: 20%;
     height: 45px; }
     .footer .footer-link .sprite {
-      background-image: url(../img/spritesheet.png);
-      background-repeat: no-repeat;
+      background-color: #fff;
       display: block; }
     .footer .footer-link .sprite-competition-f {
       width: 32px;
-      height: 29px;
-      background-position: -65px -5px; }
+      height: 28px;
+      -webkit-mask-image: url("../img/3.svg");
+              mask-image: url("../img/3.svg"); }
     .footer .footer-link .sprite-facebook-f {
       width: 29px;
-      height: 29px;
-      background-position: -5px -35px; }
+      height: 28px;
+      -webkit-mask-image: url("../img/5.svg");
+              mask-image: url("../img/5.svg"); }
     .footer .footer-link .sprite-members-f {
       width: 30px;
       height: 29px;
-      background-position: -106px -63px; }
+      -webkit-mask-image: url("../img/4.svg");
+              mask-image: url("../img/4.svg"); }
     .footer .footer-link .sprite-schedule-f {
       width: 27px;
-      height: 29px;
-      background-position: -126px -102px; }
+      height: 28px;
+      -webkit-mask-image: url("../img/1.svg");
+              mask-image: url("../img/1.svg"); }
     .footer .footer-link .sprite-video-f {
-      width: 29px;
-      height: 29px;
-      background-position: -176px -5px; }
+      width: 28px;
+      height: 28px;
+      -webkit-mask-image: url("../img/2.svg");
+              mask-image: url("../img/2.svg"); }
   .footer .footer-link:hover, .footer .active {
     background-color: #fff; }
     .footer .footer-link:hover .sprite, .footer .active .sprite {
-      background-image: url(../img/spritesheet-hover.png);
-      background-repeat: no-repeat;
+      background-color: #1d70a4;
       display: block; }
-    .footer .footer-link:hover .sprite-competition-f, .footer .active .sprite-competition-f {
-      width: 32px;
-      height: 29px;
-      background-position: -5px -5px; }
-    .footer .footer-link:hover .sprite-facebook-f, .footer .active .sprite-facebook-f {
-      width: 29px;
-      height: 29px;
-      background-position: -47px -5px; }
-    .footer .footer-link:hover .sprite-members-f, .footer .active .sprite-members-f {
-      width: 30px;
-      height: 29px;
-      background-position: -5px -44px; }
-    .footer .footer-link:hover .sprite-schedule-f, .footer .active .sprite-schedule-f {
-      width: 27px;
-      height: 29px;
-      background-position: -45px -44px; }
-    .footer .footer-link:hover .sprite-video-f, .footer .active .sprite-video-f {
-      width: 29px;
-      height: 29px;
-      background-position: -86px -5px; }
