@@ -28,14 +28,20 @@
       })
       $('.nav-tabs a').on('shown.bs.tab', function (e) {
         console.log(e.target.href.split('#')[1]);
-        if(url.split('#')[1] == 'video' && e.target.href.split('#')[1] == 'video'){
+        // add active class on video
+        if(url.split('#')[1] == 'video' && e.target.href.split('#')[1] == 'video' || e.target.href.split('#')[1] == 'video'){
               $('.footer .menu-link').addClass('active');
-            }
+          }
             else{
               $('.footer .menu-link').removeClass('active');
             }
-    }); 
-      
+    });
+
+    //disable on click star
+    // $('.star').on('click', function(e){
+    //   e.preventDefault();
+    // });
+
   	//show menu
 
     $('.menu-icon').on('click', function() {
