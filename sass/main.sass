@@ -1,0 +1,922 @@
+html, body 
+  min-width: 100%
+  min-height: 100vh
+img 
+  display: block
+  max-width: 100%
+  height: auto
+
+body 
+	// height: 200vh
+	position: relative
+	padding: 40px 0 45px 0
+	line-height: 1
+	background-color: #f3f3f3
+.header
+	width: 100%
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+	background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%)
+	padding: 9px 16px 
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 5
+	.nav
+		display: flex
+		justify-content: space-between
+		.left-menu, .right-menu
+			display: flex
+			align-items: center
+		.menu-icon
+			width: 20px
+			height: 17px
+			position: relative
+			span
+				position: absolute
+				height: 3px
+				width: 100%
+				background: #fff
+				top: 50%
+				margin-top: -1.5px
+				&:first-child
+					top: 0
+					margin-top: 0
+				&:last-child
+					top: auto
+					bottom: 0
+					margin-top: 0	
+		.menu
+			height: 0
+			width: 0
+			opacity: 0
+			position: absolute
+			top: 40px
+			left: 0
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+			background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%)
+			color: #fff
+			overflow: hidden
+			padding: 9px 0
+			.menu-link
+				display: flex
+				align-items: center
+				color: #fff
+				padding: 10px 16px
+				span
+					padding-left: 9px
+					color: #ffffff
+					font-family: "Open Sans"
+					font-size: 16px
+					font-weight: 600
+				&:hover
+					text-decoration: none
+			.sprite 
+				background-image: url(../img/spritesheet.png)
+				background-repeat: no-repeat
+				display: block
+			
+
+			.sprite-coaches 
+				width: 20px
+				height: 18px
+				background-position: -5px -5px
+			
+
+			.sprite-competition 
+				width: 20px
+				height: 19px
+				background-position: -35px -5px
+			
+
+			.sprite-facebook 
+				width: 20px
+				height: 20px
+				background-position: -107px -5px
+			
+
+			.sprite-home 
+				width: 20px
+				height: 18px
+				background-position: -107px -35px
+			
+
+			.sprite-list 
+				width: 21px
+				height: 21px
+				background-position: -44px -63px
+			
+
+			.sprite-members 
+				width: 21px
+				height: 21px
+				background-position: -75px -63px
+			
+			
+
+			.sprite-news 
+				width: 21px
+				height: 16px
+				background-position: -5px -102px
+			
+
+			.sprite-phone 
+				width: 20px
+				height: 20px
+				background-position: -36px -102px
+			
+
+			.sprite-photo 
+				width: 20px
+				height: 20px
+				background-position: -66px -102px
+			
+
+			.sprite-register 
+				width: 20px
+				height: 15px
+				background-position: -96px -102px
+			
+
+			.sprite-schedule 
+				width: 20px
+				height: 21px
+				background-position: -137px -5px
+
+			.sprite-video 
+				width: 20px
+				height: 20px
+				background-position: -146px -36px
+			
+
+			
+			
+
+		.nav-brand
+			color: #ffffff
+			font-family: "Stainless BETA"
+			font-size: 20px
+			font-weight: 400
+			// line-height: 24px
+			padding-left: 30px
+
+		.sprite 
+			background-image: url(../img/spritesheet.png)
+			background-repeat: no-repeat
+			display: block
+		.sprite-star 
+			width: 23px
+			height: 22px
+			background-position: -5px -141px
+		
+
+		.sprite-user 
+			width: 24px
+			height: 22px
+			background-position: -38px -141px
+			margin-left: 20px
+		
+		
+	.nav-show
+		.menu-icon
+			span
+				transform: rotate(45deg)
+				transition: transform 0.3s ease-out
+				&:nth-child(2)
+					transform: rotate(-45deg)
+				&:first-child
+					opacity: 0
+				&:last-child
+					opacity: 0
+		.menu
+			height: calc(100vh - 85px)
+			width: 55vw
+			opacity: 0.8
+			transition: opacity 0.5s ease-out
+			overflow: auto
+.main-content
+	padding: 15px 0
+
+	 // index.html
+	.index-tabs 	
+		border-radius: 21px
+		border: 1px solid #c4c4c4
+		padding: 5px 13px
+		justify-content: space-between
+		flex-wrap: nowrap
+		.tab-link
+			display: block
+			opacity: 0.4
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 600
+			padding: 7px 0
+			flex-grow: 1
+			text-align: center
+			flex-basis: 0
+		.tab-link.active
+			color: #ffffff
+			opacity: 1
+			box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.16)
+			border-radius: 21px
+			background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%) 
+			text-decoration: none
+	.index-tab-content
+		
+		.row
+			margin: 0 -12px
+			.col-6
+				padding: 0 12px
+		.tab-pane
+			
+			margin-top: 10px
+			img
+				width: 100%
+			.main-media
+				width: 100%
+				.text-container
+					background-color: #fff
+					padding: 16px 15px 30px 16px
+					line-height: 1.5
+					.main-title
+						color: #304a57
+						font-family: "Open Sans"
+						font-size: 22px
+						font-weight: 700
+					.main-descr
+						color: #304a57
+						font-family: "Open Sans"
+						font-size: 14px
+						font-weight: 700
+						margin-top: 3px
+			.other-media
+				margin: 20px 0
+				.text-container
+					background-color: #fff
+					padding: 8px
+					padding-bottom: 5px
+					line-height: 1.5
+					.media-text
+						color: #304a57
+						font-family: "Open Sans"
+						font-size: 12px
+						font-weight: 600
+						line-height: 15px
+					.date
+						margin-top: 5px
+						color: #304a57
+						font-family: "Open Sans"
+						font-size: 10px
+						font-weight: 400
+						line-height: 15px
+				&:hover
+					text-decoration: none
+			.video-container
+				position: relative
+				video
+					max-width: 100%
+					width: 100%
+				.play
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					display: flex
+					justify-content: center
+					align-items: center
+					.play-icon
+						display: block
+						width: 55px
+						height: 55px
+						background: url(../img/play.png) no-repeat
+	
+	// regulations.html
+	.page-title 
+		color: #1d70a4
+		font-family: "Open Sans"
+		font-size: 16px
+		font-weight: 600
+		text-align: center
+		margin-bottom: 10px
+	.regulations-paragraph
+		margin: 10px 0 22px 0
+		line-height: 1.5
+		.text
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 14px
+			font-weight: 400
+
+	//judge-user-1, participants
+	.user-container
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+		border-radius: 5px
+		background-color: #ffffff
+		margin-bottom: 20px
+		padding: 10px 15px
+		.user-info
+			display: flex
+			align-items: center
+			flex-direction: column
+			p
+				line-height: 1.2
+			
+			.name
+				margin-top: 10px
+				font-family: "Open Sans"
+				font-size: 25px
+				font-weight: 400
+				text-transform: uppercase
+				color: #304a57
+				
+			.surname
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 29px
+				font-weight: 600
+				text-transform: uppercase
+			.city
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 22px
+				font-weight: 400
+		.sub-info
+			margin-top: 20px
+			display: flex
+			justify-content: space-between
+			.text
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 16px
+				font-weight: 600
+				.text-value
+					font-weight: 400
+	.fb-link
+		display: block
+		margin-top: 20px
+		color: #2187c7
+		font-family: "Open Sans"
+		font-size: 14px
+		font-weight: 400
+		text-decoration: underline
+	.back
+		display: flex
+		align-items: center
+		margin-top: 20px
+		.circle
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.16)
+			background-color: #2187c7
+			display: flex
+			justify-content: center
+			align-items: center
+			vertical-align: middle
+			.fa-chevron-left
+				width: 8px
+				color: #fff
+		span
+			color: #2187c7
+			font-family: "Open Sans"
+			font-size: 16px
+			font-weight: 600
+			margin-left: 10px
+		&:active
+			text-decoration: none
+	.user-title-list
+		color: #304a57
+		font-family: "Open Sans"
+		font-weight: 600
+		font-size: 14px
+		line-height: 1.5
+
+	.user-list
+		display: block
+		margin-bottom: 25px
+		.user-item
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 14px
+			font-weight: 400
+			margin-top: 20px
+	//contacts, register
+
+	.content-nav
+		background-color: #fff
+		box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1)
+		border-radius: 10px 10px 0 0
+		.nav-tabs
+			border: none
+			
+			.nav-link
+				width: 50%
+				padding: 10px 0 6px 0
+				display: flex
+				justify-content: center
+				opacity: 0.5
+				border-bottom: 1px solid rgba(112, 112, 112, 0.5)
+				margin-bottom: 0.4px
+				.link-connect
+					display: block
+					width: 25px
+					height: 25px
+					background: url(../img/connect-1.png) no-repeat
+				.link-message
+					display: block
+					width: 31px
+					height: 25px
+					background: url(../img/connect-2.png) no-repeat
+			.nav-link[id^="register"]
+				width: 20%
+				.link-register-1
+					display: block
+					width: 34px
+					height: 26px
+					background: url(../img/register-1.png) no-repeat
+				.link-register-2
+					display: block
+					width: 25px
+					height: 25px
+					background: url(../img/register-2.png) no-repeat
+				.link-register-3
+					display: block
+					width: 34px
+					height: 25px
+					background: url(../img/register-3.png) no-repeat
+				.link-register-4
+					display: block
+					width: 36px
+					height: 25px
+					background: url(../img/register-4.png) no-repeat
+				.link-register-5
+					display: block
+					width: 33px
+					height: 25px
+					background: url(../img/register-5.png) no-repeat
+			
+			.active
+				border: none
+				border-bottom: 2px solid #2187c7
+				margin-bottom: 0
+				opacity: 1	
+	.tab-form
+		background: #fff
+		padding: 0 16px
+		overflow: hidden
+		position: relative
+		box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1)
+		padding-bottom: 20px
+		padding-top: 10px
+		border-radius: 0 0 10px 10px
+		.connect-item
+			display: block
+			margin: 20px 0 0 0
+			border-radius: 22px
+			border: 1px solid rgba(48, 74, 87,0.4)
+			padding: 13px 18px
+			width: 100%
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 600
+			outline: none
+			
+		input::placeholder
+			opacity: 0.4
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 600
+		select:not(:focus):invalid
+			color: rgba(48, 74, 87, 0.4)
+		
+				
+		input[type="file"]
+			display: none
+		label.connect-item
+			color: rgba(48, 74, 87, 0.4)
+			background: url(../img/input.png) no-repeat 96% 50%
+			
+		
+		.connect-select
+			
+			display: block
+			appearance: none
+			color: #304a57
+			background-color: transparent
+			background: url(../img/select-arrow.png) no-repeat 96% 50%
+			option
+				&:nth-of-type(2n)
+					background-color: #f1f1f1	
+			
+		.connect-textarea
+			border-radius: 10px
+			padding: 5px 10px
+			&::placeholder
+				color: rgba(48, 74, 87, 0.4)
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 600
+
+		.send-sms
+			color: #2187c7
+			font-family: "Open Sans"
+			font-size: 16px
+			font-weight: 600
+			box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.08)
+			border-radius: 29px
+			border: 1px solid #2187c7
+			background: none
+			cursor: pointer
+			&:hover
+				background-color: #2187c7
+				color: #fff
+		.phone-input
+			border: 1px solid rgb(48, 74, 87)
+			&::placeholder
+				opacity: 1
+		.subinfo
+			opacity: 0.5
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+			margin-top: 5px
+	.next
+		display: flex
+		align-items: center
+		margin-top: 20px
+		justify-content: flex-end
+		.circle
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.16)
+			background-color: #2187c7
+			display: flex
+			justify-content: center
+			align-items: center
+			vertical-align: middle
+			.fa-chevron-right
+				width: 8px
+				color: #fff
+		span
+			color: #2187c7
+			font-family: "Open Sans"
+			font-size: 16px
+			font-weight: 600
+			margin-right: 10px
+		&:active
+			text-decoration: none
+	//register-3
+	.tab-form
+		
+		.content-title
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+			text-align: center
+			margin-bottom: 15px
+			margin-top: 20px
+		.photos
+			display: flex
+			justify-content: space-between
+			max-width: 320px
+			margin: auto
+			.photo-block
+				display: flex
+				flex-direction: column
+				align-items: center
+				padding: 7px
+				width: 136px
+				min-height: 159px
+				border-radius: 10px
+				background: url(../img/border.png)
+				.subtitle
+					opacity: 0.5
+					color: #304a57
+					font-family: "Open Sans"
+					font-size: 12px
+					font-style: italic
+					line-height: 15px
+					margin-top: 4px
+				.hidden
+					display: none
+			.photo-in
+				padding-top: 25px
+				img
+					opacity: 0.5
+				label
+					margin-top: 20px
+					color: #2187c7
+					font-family: "Open Sans"
+					font-size: 12px
+					font-style: italic
+					line-height: 15px
+					text-decoration: underline
+		.subtext
+			opacity: 0.5
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 400
+			line-height: 15px
+			margin-top: 10px
+			text-align: center
+	//register-5
+	.register-form-5
+		min-height: 326px
+	// competition
+	.competition-list
+		.list-item
+			box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			background-color: #ffffff
+			padding: 16px 8px
+			margin-bottom: 20px
+			.item-date
+				margin-bottom: 5px
+				// max-width: 330px
+				display: flex
+				justify-content: center
+				.time
+					display: flex
+					justify-content: space-between
+					max-width: 330px
+					width: 100%
+					.time-item
+						display: flex
+						justify-content: space-between
+						flex-wrap: wrap
+						max-width: 80px
+						.time-block
+							display: flex
+							justify-content: center
+							align-items: center
+							color: #1d70a4
+							font-family: "Open Sans"
+							font-size: 38px
+							font-weight: 700
+							width: 35px
+							height: 60px
+							border: 1px solid #1d70a4
+
+						.title
+							width: 100%
+							color: #304a57
+							font-family: "Open Sans"
+							font-size: 12px
+							font-weight: 600
+							line-height: 15px
+							margin-top: 5px
+							text-align: center
+					.dots
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+						margin: 0 5px
+						height: 60px
+						span
+							display: block
+							background-color: #1d70a4
+							width: 11px
+							height: 11px
+							border-radius: 50%
+							margin: 5px 0
+			.small-date
+				width: 100%
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 12px
+				font-style: italic
+				line-height: 15px
+				margin-top: 10px
+			.map
+				width: 100%
+				height: 160px
+				margin-top: 5px
+			.coordinate
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 12px
+				font-style: italic
+				line-height: 15px
+				margin-top: 5px
+			.descr
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 400
+				line-height: 15px
+				margin-top: 5px
+	// photo-1.html
+	.top-back-link
+		margin-top: 0
+		margin-bottom: 10px
+		.fas
+			font-size: 16px
+		span
+			font-size: 12px
+			margin-left: 5px
+	.photo-list
+		.photo-item
+			padding: 9px 8px
+			margin-bottom: 20px
+			box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1)
+			border-radius: 10px
+			background-color: #ffffff
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.photo-img
+				width: 100%
+				margin-bottom: 10px
+			.photo-name, .photo-number
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 400
+				line-height: 15px
+			
+	//judges, participants
+	.people-list
+		background-color: #ffffff
+		.people-item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding: 10px 15px
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 16px
+			font-weight: 600
+			line-height: 18px
+			background-color: #ffffff
+			min-height: 80px
+			&:hover, .people-item:active
+				text-decoration: none
+			.star
+				width: 20px
+				height: 20px
+				background: url(../img/star.png)
+			.name
+				font-size: 14px
+				font-weight: 400
+			.small-text
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 12px
+				font-weight: 400
+			img
+				min-width: 46px	
+			&:nth-of-type(2n)
+				background-color: #f6f6f6
+	//participants-user
+	.nav-participants
+		background-color: transparent
+		box-shadow: none
+		margin-top: 15px
+		.nav-link
+			color: #304a57
+			font-family: "Open Sans"
+			font-size: 14px
+			font-weight: 600
+		.active
+			background-color: transparent
+	.tab-participants
+		margin-top: 10px
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+		border-radius: 5px
+		background-color: #ffffff
+		
+		.list-item
+			display: flex
+			justify-content: space-between
+			padding: 12px 15px
+			.text
+				color: #304a57
+				font-family: "Open Sans"
+				font-size: 14px
+				font-weight: 400
+			&:nth-of-type(2n)
+				background-color: #f6f6f6
+	//competition
+	.bg-title-competition
+		margin-top: -15px
+		background-color: rgb(29, 112, 164)
+		padding: 12px
+		.page-title
+			color: #ffffff
+			font-family: "Open Sans"
+			font-size: 14px
+			font-weight: 600
+			margin-bottom: 0
+	.competition-list
+		.people-item
+			&:nth-of-type(2n)
+				background-color: transparent
+			&:nth-of-type(2n+1)
+				background-color: #f6f6f6
+			&:first-of-type
+				background-color: rgba(37, 196, 74, 0.5)
+			&:nth-of-type(2)
+				background-color: rgba(37, 196, 74, 0.3)
+			&:nth-of-type(3)
+				background-color: rgba(37, 196, 74, 0.15)
+			&:nth-of-type(4)
+				background-color: rgba(229, 211, 46, 0.5)
+			&:nth-of-type(5)
+				background-color: rgba(229, 211, 46, 0.3)
+				
+.footer
+	display: flex
+	background-image: linear-gradient(to left, #2187c7 0%, #1d70a4 100%)
+	min-height: 45px
+	width: 100%
+	position: fixed
+	z-index: 5
+	bottom: 0
+	.footer-link
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 20%
+		height: 45px
+		.sprite 
+			background-image: url(../img/spritesheet.png)
+			background-repeat: no-repeat
+			display: block
+		.sprite-competition-f 
+			width: 32px
+			height: 29px
+			background-position: -65px -5px
+		
+		.sprite-facebook-f 
+			width: 29px
+			height: 29px
+			background-position: -5px -35px
+		
+
+		
+		.sprite-members-f 
+			width: 30px
+			height: 29px
+			background-position: -106px -63px
+		
+
+		
+		.sprite-schedule-f 
+			width: 27px
+			height: 29px
+			background-position: -126px -102px
+		
+
+		
+
+		.sprite-video-f 
+			width: 29px
+			height: 29px
+			background-position: -176px -5px
+		&:hover
+			background-color: #fff
+			.sprite 
+				background-image: url(../img/spritesheet-hover.png)
+				background-repeat: no-repeat
+				display: block
+			.sprite-competition-f 
+				width: 32px
+				height: 29px
+				background-position: -5px -5px
+			
+			.sprite-facebook-f 
+				width: 29px
+				height: 29px
+				background-position: -47px -5px
+			
+
+			
+			.sprite-members-f 
+				width: 30px
+				height: 29px
+				background-position: -5px -44px
+			
+
+			
+			.sprite-schedule-f 
+				width: 27px
+				height: 29px
+				background-position: -45px -44px
+			
+
+			
+
+			.sprite-video-f 
+				width: 29px
+				height: 29px
+				background-position: -86px -5px
