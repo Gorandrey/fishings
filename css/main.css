@@ -159,8 +159,7 @@ body {
     .header .nav .sprite-star {
       width: 23px;
       height: 22px;
-      background: url("../img/Layer 2.svg") no-repeat;
-      margin-left: 20px; }
+      background: url("../img/Layer 2.svg") no-repeat; }
     .header .nav .sprite-user {
       width: 24px;
       height: 22px;
