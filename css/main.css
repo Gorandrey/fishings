@@ -78,7 +78,7 @@ body {
       color: #fff;
       overflow: hidden;
       padding: 9px 0;
-      padding-bottom: 54px; }
+      padding-bottom: 45px; }
       .header .nav .menu .menu-link {
         display: -webkit-box;
         display: -webkit-flex;
@@ -187,8 +187,8 @@ body {
     .header .nav-show .menu-icon span:last-child {
       opacity: 0; }
   .header .nav-show .menu {
-    height: -webkit-calc(100vh - 40px);
-    height: calc(100vh - 40px);
+    height: -webkit-calc(100vh - 85px);
+    height: calc(100vh - 85px);
     width: 55vw;
     opacity: 0.8;
     -webkit-transition: opacity 0.5s ease-out;
