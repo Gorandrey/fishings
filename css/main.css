@@ -69,16 +69,10 @@ body {
       position: absolute;
       top: 40px;
       left: 0;
-      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-      background-image: -webkit-gradient(linear, right top, left top, from(#2187c7), to(#1d70a4));
-      background-image: -webkit-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
-      background-image: -o-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
-      background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%);
       color: #fff;
-      overflow: hidden;
-      padding: 9px 0; }
+      overflow: hidden; }
       .header .nav .menu .menu-link {
+        width: 55vw;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -88,7 +82,11 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         color: #fff;
-        padding: 10px 16px; }
+        padding: 10px 16px;
+        background-image: -webkit-gradient(linear, right top, left top, from(#2187c7), to(#1d70a4));
+        background-image: -webkit-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
+        background-image: -o-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
+        background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%); }
         .header .nav .menu .menu-link span {
           padding-left: 9px;
           color: #ffffff;
@@ -97,6 +95,10 @@ body {
           font-weight: 600; }
         .header .nav .menu .menu-link:hover {
           text-decoration: none; }
+        .header .nav .menu .menu-link:first-child {
+          padding-top: 15px; }
+        .header .nav .menu .menu-link:last-child {
+          padding-bottom: 15px; }
       .header .nav .menu .sprite {
         background-image: url(../img/spritesheet.png);
         background-repeat: no-repeat;
@@ -188,7 +190,7 @@ body {
   .header .nav-show .menu {
     height: -webkit-calc(100vh - 85px);
     height: calc(100vh - 85px);
-    width: 55vw;
+    width: 100%;
     opacity: 0.8;
     -webkit-transition: opacity 0.5s ease-out;
     -o-transition: opacity 0.5s ease-out;

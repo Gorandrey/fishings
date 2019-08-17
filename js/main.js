@@ -23,9 +23,12 @@
         }
          
       })
-      $('.nav-tabs a').on('shown.bs.tab', function (e) {
-        window.location = url.split('#')[0]+e.target.hash;
-    }); 
+      
+      //save hash after reload
+
+    //   $('.nav-tabs a').on('shown.bs.tab', function (e) {
+    //     window.location = url.split('#')[0]+e.target.hash;
+    // }); 
       
   	//show menu
 
