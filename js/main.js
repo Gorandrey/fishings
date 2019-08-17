@@ -18,14 +18,11 @@
         if (hrf.match('#')) {
             
             $('.nav-tabs a[href="#' + hrf.split('#')[1] + '"]').tab('show');
-            $('.sidebar').removeClass('nav-show');
+            $(this).closest('.left-menu').removeClass('nav-show');
             
         }
          
       })
-
-      //save hash after reload
-
     //   $('.nav-tabs a').on('shown.bs.tab', function (e) {
     //     window.location = url.split('#')[0]+e.target.hash;
     // }); 
@@ -34,7 +31,8 @@
 
     $('.menu-icon').on('click', function() {
     	
-      $('.sidebar').toggleClass('nav-show', 1000);
+      $(this).closest('.left-menu')
+        .toggleClass('nav-show', 1000);
     });
 
 
