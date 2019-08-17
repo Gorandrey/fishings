@@ -78,7 +78,7 @@ body {
       color: #fff;
       overflow: hidden;
       padding: 9px 0;
-      padding-bottom: 45px; }
+      padding-bottom: 54px; }
       .header .nav .menu .menu-link {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1073,29 +1073,29 @@ body {
       width: 29px;
       height: 29px;
       background-position: -176px -5px; }
-    .footer .footer-link:hover {
-      background-color: #fff; }
-      .footer .footer-link:hover .sprite {
-        background-image: url(../img/spritesheet-hover.png);
-        background-repeat: no-repeat;
-        display: block; }
-      .footer .footer-link:hover .sprite-competition-f {
-        width: 32px;
-        height: 29px;
-        background-position: -5px -5px; }
-      .footer .footer-link:hover .sprite-facebook-f {
-        width: 29px;
-        height: 29px;
-        background-position: -47px -5px; }
-      .footer .footer-link:hover .sprite-members-f {
-        width: 30px;
-        height: 29px;
-        background-position: -5px -44px; }
-      .footer .footer-link:hover .sprite-schedule-f {
-        width: 27px;
-        height: 29px;
-        background-position: -45px -44px; }
-      .footer .footer-link:hover .sprite-video-f {
-        width: 29px;
-        height: 29px;
-        background-position: -86px -5px; }
+  .footer .footer-link:hover, .footer .active {
+    background-color: #fff; }
+    .footer .footer-link:hover .sprite, .footer .active .sprite {
+      background-image: url(../img/spritesheet-hover.png);
+      background-repeat: no-repeat;
+      display: block; }
+    .footer .footer-link:hover .sprite-competition-f, .footer .active .sprite-competition-f {
+      width: 32px;
+      height: 29px;
+      background-position: -5px -5px; }
+    .footer .footer-link:hover .sprite-facebook-f, .footer .active .sprite-facebook-f {
+      width: 29px;
+      height: 29px;
+      background-position: -47px -5px; }
+    .footer .footer-link:hover .sprite-members-f, .footer .active .sprite-members-f {
+      width: 30px;
+      height: 29px;
+      background-position: -5px -44px; }
+    .footer .footer-link:hover .sprite-schedule-f, .footer .active .sprite-schedule-f {
+      width: 27px;
+      height: 29px;
+      background-position: -45px -44px; }
+    .footer .footer-link:hover .sprite-video-f, .footer .active .sprite-video-f {
+      width: 29px;
+      height: 29px;
+      background-position: -86px -5px; }

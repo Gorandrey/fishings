@@ -7,7 +7,10 @@
         const url = document.location.toString();
         if (url.match('#')) {
             $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
-            
+            window.scrollTop = 0;
+            if(url.split('#')[1] == 'video'){
+              $('.footer .menu-link').addClass('active');
+            }
         }  
       
       //open tab from menu
@@ -23,9 +26,15 @@
         }
          
       })
-    //   $('.nav-tabs a').on('shown.bs.tab', function (e) {
-    //     window.location = url.split('#')[0]+e.target.hash;
-    // }); 
+      $('.nav-tabs a').on('shown.bs.tab', function (e) {
+        console.log(e.target.href.split('#')[1]);
+        if(url.split('#')[1] == 'video' && e.target.href.split('#')[1] == 'video'){
+              $('.footer .menu-link').addClass('active');
+            }
+            else{
+              $('.footer .menu-link').removeClass('active');
+            }
+    }); 
       
   	//show menu
 
