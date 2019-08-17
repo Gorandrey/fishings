@@ -18,12 +18,12 @@
         if (hrf.match('#')) {
             
             $('.nav-tabs a[href="#' + hrf.split('#')[1] + '"]').tab('show');
-            $(this).closest('.left-menu').removeClass('nav-show');
+            $('.sidebar').removeClass('nav-show');
             
         }
          
       })
-      
+
       //save hash after reload
 
     //   $('.nav-tabs a').on('shown.bs.tab', function (e) {
@@ -34,8 +34,7 @@
 
     $('.menu-icon').on('click', function() {
     	
-      $(this).closest('.left-menu')
-        .toggleClass('nav-show', 1000);
+      $('.sidebar').toggleClass('nav-show', 1000);
     });
 
 

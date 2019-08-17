@@ -12,6 +12,7 @@ body
 	padding: 40px 0 45px 0
 	line-height: 1
 	background-color: #f3f3f3
+	// overflow: hidden
 .header
 	width: 100%
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
@@ -45,112 +46,6 @@ body
 					top: auto
 					bottom: 0
 					margin-top: 0	
-		.menu
-			height: 0
-			width: 0
-			opacity: 0
-			position: absolute
-			top: 40px
-			left: 0
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
-			background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%)
-			color: #fff
-			overflow: hidden
-			padding: 8px 0
-			.menu-link
-				display: flex
-				align-items: center
-				color: #fff
-				padding: 8px 16px
-				span
-					padding-left: 9px
-					color: #ffffff
-					font-family: "Open Sans"
-					font-size: 16px
-					font-weight: 600
-				&:hover
-					text-decoration: none
-			.sprite 
-				background-image: url(../img/spritesheet.png)
-				background-repeat: no-repeat
-				display: block
-			
-
-			.sprite-coaches 
-				width: 20px
-				height: 18px
-				background-position: -5px -5px
-			
-
-			.sprite-competition 
-				width: 20px
-				height: 19px
-				background-position: -35px -5px
-			
-
-			.sprite-facebook 
-				width: 20px
-				height: 20px
-				background-position: -107px -5px
-			
-
-			.sprite-home 
-				width: 20px
-				height: 18px
-				background-position: -107px -35px
-			
-
-			.sprite-list 
-				width: 21px
-				height: 21px
-				background-position: -44px -63px
-			
-
-			.sprite-members 
-				width: 21px
-				height: 21px
-				background-position: -75px -63px
-			
-			
-
-			.sprite-news 
-				width: 21px
-				height: 16px
-				background-position: -5px -102px
-			
-
-			.sprite-phone 
-				width: 20px
-				height: 20px
-				background-position: -36px -102px
-			
-
-			.sprite-photo 
-				width: 20px
-				height: 20px
-				background-position: -66px -102px
-			
-
-			.sprite-register 
-				width: 20px
-				height: 15px
-				background-position: -96px -102px
-			
-
-			.sprite-schedule 
-				width: 20px
-				height: 21px
-				background-position: -137px -5px
-
-			.sprite-video 
-				width: 20px
-				height: 20px
-				background-position: -146px -36px
-			
-
-			
-			
-
 		.nav-brand
 			color: #ffffff
 			font-family: "Stainless BETA"
@@ -158,7 +53,6 @@ body
 			font-weight: 400
 			// line-height: 24px
 			padding-left: 30px
-
 		.sprite 
 			background-image: url(../img/spritesheet.png)
 			background-repeat: no-repeat
@@ -174,26 +68,136 @@ body
 			height: 22px
 			background-position: -38px -141px
 			margin-left: 20px
-		
-		
-	.nav-show
-		.menu-icon
+.sidebar
+	.menu
+		height: 0
+		width: 0
+		opacity: 0
+		position: absolute
+		top: 40px
+		left: 0
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+		background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%)
+		color: #fff
+		overflow: hidden
+		padding: 8px 0
+		.menu-link
+			display: flex
+			align-items: center
+			color: #fff
+			padding: 8px 16px
 			span
-				transform: rotate(45deg)
-				transition: transform 0.3s ease-out
-				&:nth-child(2)
-					transform: rotate(-45deg)
-				&:first-child
-					opacity: 0
-				&:last-child
-					opacity: 0
-		.menu
-			height: calc(100vh - 85px)
-			width: 55vw
-			opacity: 0.8
-			transition: opacity 0.5s ease-out
-			z-index: 2
-			overflow: auto
+				padding-left: 9px
+				color: #ffffff
+				font-family: "Open Sans"
+				font-size: 16px
+				font-weight: 600
+			&:hover
+				text-decoration: none
+		.sprite 
+			background-image: url(../img/spritesheet.png)
+			background-repeat: no-repeat
+			display: block
+		
+
+		.sprite-coaches 
+			width: 20px
+			height: 18px
+			background-position: -5px -5px
+		
+
+		.sprite-competition 
+			width: 20px
+			height: 19px
+			background-position: -35px -5px
+		
+
+		.sprite-facebook 
+			width: 20px
+			height: 20px
+			background-position: -107px -5px
+		
+
+		.sprite-home 
+			width: 20px
+			height: 18px
+			background-position: -107px -35px
+		
+
+		.sprite-list 
+			width: 21px
+			height: 21px
+			background-position: -44px -63px
+		
+
+		.sprite-members 
+			width: 21px
+			height: 21px
+			background-position: -75px -63px
+		
+		
+
+		.sprite-news 
+			width: 21px
+			height: 16px
+			background-position: -5px -102px
+		
+
+		.sprite-phone 
+			width: 20px
+			height: 20px
+			background-position: -36px -102px
+		
+
+		.sprite-photo 
+			width: 20px
+			height: 20px
+			background-position: -66px -102px
+		
+
+		.sprite-register 
+			width: 20px
+			height: 15px
+			background-position: -96px -102px
+		
+
+		.sprite-schedule 
+			width: 20px
+			height: 21px
+			background-position: -137px -5px
+
+		.sprite-video 
+			width: 20px
+			height: 20px
+			background-position: -146px -36px
+		
+
+		
+		
+
+	
+
+
+	
+	
+.nav-show
+	.menu-icon
+		span
+			transform: rotate(45deg)
+			transition: transform 0.3s ease-out
+			&:nth-child(2)
+				transform: rotate(-45deg)
+			&:first-child
+				opacity: 0
+			&:last-child
+				opacity: 0
+	.menu
+		height: calc(100vh - 85px)
+		width: 55vw
+		opacity: 0.8
+		transition: opacity 0.5s ease-out
+		z-index: 2
+		overflow: auto		
 .main-content
 	padding: 15px 0
 

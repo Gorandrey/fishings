@@ -62,93 +62,6 @@ body {
           top: auto;
           bottom: 0;
           margin-top: 0; }
-    .header .nav .menu {
-      height: 0;
-      width: 0;
-      opacity: 0;
-      position: fixed;
-      top: 40px;
-      left: 0;
-      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-      background-image: -webkit-gradient(linear, right top, left top, from(#2187c7), to(#1d70a4));
-      background-image: -webkit-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
-      background-image: -o-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
-      background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%);
-      color: #fff;
-      overflow: hidden;
-      padding: 8px 0; }
-      .header .nav .menu .menu-link {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        color: #fff;
-        padding: 8px 16px; }
-        .header .nav .menu .menu-link span {
-          padding-left: 9px;
-          color: #ffffff;
-          font-family: "Open Sans";
-          font-size: 16px;
-          font-weight: 600; }
-        .header .nav .menu .menu-link:hover {
-          text-decoration: none; }
-      .header .nav .menu .sprite {
-        background-image: url(../img/spritesheet.png);
-        background-repeat: no-repeat;
-        display: block; }
-      .header .nav .menu .sprite-coaches {
-        width: 20px;
-        height: 18px;
-        background-position: -5px -5px; }
-      .header .nav .menu .sprite-competition {
-        width: 20px;
-        height: 19px;
-        background-position: -35px -5px; }
-      .header .nav .menu .sprite-facebook {
-        width: 20px;
-        height: 20px;
-        background-position: -107px -5px; }
-      .header .nav .menu .sprite-home {
-        width: 20px;
-        height: 18px;
-        background-position: -107px -35px; }
-      .header .nav .menu .sprite-list {
-        width: 21px;
-        height: 21px;
-        background-position: -44px -63px; }
-      .header .nav .menu .sprite-members {
-        width: 21px;
-        height: 21px;
-        background-position: -75px -63px; }
-      .header .nav .menu .sprite-news {
-        width: 21px;
-        height: 16px;
-        background-position: -5px -102px; }
-      .header .nav .menu .sprite-phone {
-        width: 20px;
-        height: 20px;
-        background-position: -36px -102px; }
-      .header .nav .menu .sprite-photo {
-        width: 20px;
-        height: 20px;
-        background-position: -66px -102px; }
-      .header .nav .menu .sprite-register {
-        width: 20px;
-        height: 15px;
-        background-position: -96px -102px; }
-      .header .nav .menu .sprite-schedule {
-        width: 20px;
-        height: 21px;
-        background-position: -137px -5px; }
-      .header .nav .menu .sprite-video {
-        width: 20px;
-        height: 20px;
-        background-position: -146px -36px; }
     .header .nav .nav-brand {
       color: #ffffff;
       font-family: "Stainless BETA";
@@ -168,33 +81,123 @@ body {
       height: 22px;
       background-position: -38px -141px;
       margin-left: 20px; }
-  .header .nav-show .menu-icon span {
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
-    -o-transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
-    .header .nav-show .menu-icon span:nth-child(2) {
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-    .header .nav-show .menu-icon span:first-child {
-      opacity: 0; }
-    .header .nav-show .menu-icon span:last-child {
-      opacity: 0; }
-  .header .nav-show .menu {
-    height: -webkit-calc(100vh - 85px);
-    height: calc(100vh - 85px);
-    width: 55vw;
-    opacity: 0.8;
-    -webkit-transition: opacity 0.5s ease-out;
-    -o-transition: opacity 0.5s ease-out;
-    transition: opacity 0.5s ease-out;
-    z-index: 2;
-    overflow: auto; }
+
+.sidebar .menu {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-image: -webkit-gradient(linear, right top, left top, from(#2187c7), to(#1d70a4));
+  background-image: -webkit-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
+  background-image: -o-linear-gradient(right, #2187c7 0%, #1d70a4 100%);
+  background-image: linear-gradient(270deg, #2187c7 0%, #1d70a4 100%);
+  color: #fff;
+  overflow: hidden;
+  padding: 8px 0; }
+  .sidebar .menu .menu-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+    padding: 8px 16px; }
+    .sidebar .menu .menu-link span {
+      padding-left: 9px;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 600; }
+    .sidebar .menu .menu-link:hover {
+      text-decoration: none; }
+  .sidebar .menu .sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block; }
+  .sidebar .menu .sprite-coaches {
+    width: 20px;
+    height: 18px;
+    background-position: -5px -5px; }
+  .sidebar .menu .sprite-competition {
+    width: 20px;
+    height: 19px;
+    background-position: -35px -5px; }
+  .sidebar .menu .sprite-facebook {
+    width: 20px;
+    height: 20px;
+    background-position: -107px -5px; }
+  .sidebar .menu .sprite-home {
+    width: 20px;
+    height: 18px;
+    background-position: -107px -35px; }
+  .sidebar .menu .sprite-list {
+    width: 21px;
+    height: 21px;
+    background-position: -44px -63px; }
+  .sidebar .menu .sprite-members {
+    width: 21px;
+    height: 21px;
+    background-position: -75px -63px; }
+  .sidebar .menu .sprite-news {
+    width: 21px;
+    height: 16px;
+    background-position: -5px -102px; }
+  .sidebar .menu .sprite-phone {
+    width: 20px;
+    height: 20px;
+    background-position: -36px -102px; }
+  .sidebar .menu .sprite-photo {
+    width: 20px;
+    height: 20px;
+    background-position: -66px -102px; }
+  .sidebar .menu .sprite-register {
+    width: 20px;
+    height: 15px;
+    background-position: -96px -102px; }
+  .sidebar .menu .sprite-schedule {
+    width: 20px;
+    height: 21px;
+    background-position: -137px -5px; }
+  .sidebar .menu .sprite-video {
+    width: 20px;
+    height: 20px;
+    background-position: -146px -36px; }
+
+.nav-show .menu-icon span {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+  .nav-show .menu-icon span:nth-child(2) {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .nav-show .menu-icon span:first-child {
+    opacity: 0; }
+  .nav-show .menu-icon span:last-child {
+    opacity: 0; }
+
+.nav-show .menu {
+  height: -webkit-calc(100vh - 85px);
+  height: calc(100vh - 85px);
+  width: 55vw;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  z-index: 2;
+  overflow: auto; }
 
 .main-content {
   padding: 15px 0; }
