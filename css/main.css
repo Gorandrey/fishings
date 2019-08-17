@@ -1018,6 +1018,30 @@ body {
   .main-content .competition-list .people-item:nth-of-type(5) {
     background-color: rgba(229, 211, 46, 0.3); }
 
+.advertising {
+  height: 48px;
+  background-color: #304a57;
+  position: fixed;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  z-index: 10; }
+  .advertising .times-block {
+    width: 23px;
+    height: 23px;
+    -webkit-border-radius: 5px 0 0;
+            border-radius: 5px 0 0;
+    background-color: #304a57;
+    position: absolute;
+    right: 0;
+    top: -23px; }
+    .advertising .times-block span {
+      display: block;
+      width: 11px;
+      height: 11px;
+      background: url(../img/times.png) no-repeat;
+      margin: 6px auto; }
+
 .footer {
   display: -webkit-box;
   display: -webkit-flex;

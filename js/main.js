@@ -37,10 +37,7 @@
             }
     });
 
-    //disable on click star
-    // $('.star').on('click', function(e){
-    //   e.preventDefault();
-    // });
+  
 
   	//show menu
 
@@ -76,6 +73,9 @@
 	
 	});
 
-    
+  //close advertising
+  $('.times-block').on('click', function(){
+    $('.advertising').hide();
+  });
     
   });
